@@ -1,7 +1,7 @@
-import React from 'react';
-import logo from './logo.svg';
-import { Counter } from './features/counter/Counter';
-import './App.css';
+import React from "react";
+import logo from "./logo.svg";
+import { Counter } from "./features/counter/Counter";
+import "./App.css";
 
 function App() {
   return (
@@ -48,6 +48,26 @@ function App() {
             rel="noopener noreferrer"
           >
             React Redux
+          </a>
+        </span>
+        <span>
+          <span>Aditional </span>
+          <a
+            className="App-link"
+            href="https://graphql.org/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            GraphQL
+          </a>
+          <span> and </span>
+          <a
+            className="App-link"
+            href="https://www.apollographql.com/docs/react/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Apollo client
           </a>
         </span>
       </header>
