@@ -4,9 +4,10 @@ import Searcher from '../../elements/Searcher/Searcher';
 
 const Body = () => {
 	return (
-		<div>
-			Main content area
-			<Searcher />
+		<div className='container'>
+			<div className='root'>
+				<Searcher />
+			</div>
 		</div>
 	);
 };

@@ -4,7 +4,7 @@ import './styles.css';
 
 const Navigation = () => {
 	return (
-		<nav className='navbar navbar-expand-lg bg-dark-aqua'>
+		<nav className='navbar navbar-expand-lg bg-dark-aqua mt-4'>
 			<div className='container-fluid'>
 				<div className='collapse navbar-collapse' id='navbarNav'>
 					<ul className='nav nav-pills nav-fill'>
