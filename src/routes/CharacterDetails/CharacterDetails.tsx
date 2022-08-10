@@ -1,14 +1,15 @@
 import { useParams } from 'react-router-dom';
 //  import LayoutPrincipal
 import LayoutPrincipal from '../../components/layouts/LayoutPrincipal';
+import DetailSection from '../../components/modules/DetailSection/DetailSection';
 
 const CharacterDetails = () => {
 	const params = useParams();
-	console.log('[character-id]: ', params.characterId);
+	const characterId = parseInt(params.characterId!, 10);
 
 	return (
 		<LayoutPrincipal>
-			<div>Page for show details of character</div>
+			<DetailSection ids={characterId} />
 		</LayoutPrincipal>
 	);
 };
