@@ -1,8 +1,9 @@
 import React from 'react';
 import { createRoot } from 'react-dom/client';
-import { Provider } from 'react-redux';
+//	import { Provider } from 'react-redux';
+import { ApolloClient, InMemoryCache, ApolloProvider } from '@apollo/client';
 
-import { store } from './app/store';
+//	import { store } from './app/store';
 import RoutesCustom from './routes';
 import reportWebVitals from './reportWebVitals';
 import './index.css';
@@ -10,11 +11,21 @@ import './index.css';
 const container = document.getElementById('root')!;
 const root = createRoot(container);
 
+/**
+ * init client with Apollo
+ * uri: specifies the URL of our GraphQL server
+ * cache: cache query results after fetching
+ */
+const client = new ApolloClient({
+	uri: 'https://rickandmortyapi.com/graphql',
+	cache: new InMemoryCache(),
+});
+
 root.render(
 	<React.StrictMode>
-		<Provider store={store}>
+		<ApolloProvider client={client}>
 			<RoutesCustom />
-		</Provider>
+		</ApolloProvider>
 	</React.StrictMode>,
 );
 

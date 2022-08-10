@@ -1,7 +1,12 @@
-import React from 'react';
+//  import LayoutPrincipal
+import LayoutPrincipal from '../../components/layouts/LayoutPrincipal';
 
 const Favorites = () => {
-	return <div>Page for favorites characters of Rick and Morty</div>;
+	return (
+		<LayoutPrincipal>
+			<div>Page for favorites characters of Rick and Morty</div>
+		</LayoutPrincipal>
+	);
 };
 
 export default Favorites;

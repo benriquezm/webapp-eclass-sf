@@ -1,19 +1,19 @@
 import React from 'react';
 import Header from '../modules/Header/Header';
-import Body from '../modules/Body/Body';
 
 //  TODO show separate Interfaces props
 interface ILayoutProps {
 	children: React.ReactNode;
 }
 
-const Layout = (props: ILayoutProps) => {
+const LayoutPrincipal = (props: ILayoutProps) => {
 	return (
 		<React.Fragment>
+			<base href='/' />
 			<Header />
-			<Body />
+			<main>{props.children}</main>
 		</React.Fragment>
 	);
 };
 
-export default Layout;
+export default LayoutPrincipal;

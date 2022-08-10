@@ -44,3 +44,16 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+
+## References sources
+
+This configurations has been resolve consulting the next references:
+
+-   [Set up eslint-prettier](https://blog.devgenius.io/eslint-prettier-typescript-and-react-in-2022-e5021ebca2b1) - Configurations of eslint and prettier for project with react and typescript!
+-   [Set up eslint-prettier](https://levelup.gitconnected.com/how-to-add-a-custom-eslint-configuration-to-a-create-react-app-project-aea3f7c1d7af) - Configurations of eslint and prettier for project with react and typescript!
+-   [Set up eslint-prettier](https://andrebnassis.medium.com/setting-eslint-on-a-react-typescript-project-2021-1190a43ffba) - Configurations of eslint and prettier for project with react and typescript!
+-   [Create webapp with cra redux](https://redux-toolkit.js.org/introduction/getting-started) - Create base project for react and typescript with redux!
+-   [Setup graphql client project react](https://www.apollographql.com/docs/react/get-started/) - Set up graphql and apollo client for project reactjs!
+-   [Typescript interfaces](https://www.querythreads.com/typescript-styled-component-error-type-children-string-has-no-properties-in-common-with-type-intrinsic-attributes/) - Typescript create interfaces!
+-   [React Router Dom v6](https://reactrouter.com/docs/en/v6/getting-started/tutorial) - Create routes with react router dom v6!
+-   [Boostrap v5.2](https://getbootstrap.com/docs/5.2/getting-started/introduction/) - Documentation of bootstrap v5.2!
