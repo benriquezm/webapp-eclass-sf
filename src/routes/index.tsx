@@ -3,20 +3,18 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 //  import all routes (pages)
 import Characters from './Characters/Characters';
+import CharacterDetails from './CharacterDetails/CharacterDetails';
 import Favorites from './Favorites/Favorites';
-
-//  import LayoutPrincipal
-import LayoutPrincipal from '../components/layouts/LayoutPrincipal';
 
 const RoutesCustom = () => {
 	return (
 		<BrowserRouter>
-			<LayoutPrincipal>
-				<Routes>
-					<Route path='/' element={<Characters />} />
-					<Route path='favorites' element={<Favorites />} />
-				</Routes>
-			</LayoutPrincipal>
+			<Routes>
+				<Route path='/' element={<Characters />} />
+				<Route path='characters' element={<Characters />} />
+				<Route path='characters/:characterId' element={<CharacterDetails />} />
+				<Route path='favorites' element={<Favorites />} />
+			</Routes>
 		</BrowserRouter>
 	);
 };

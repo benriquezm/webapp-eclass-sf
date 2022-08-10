@@ -1,7 +1,20 @@
-import React from 'react';
+//  import LayoutPrincipal
+import LayoutPrincipal from '../../components/layouts/LayoutPrincipal';
+import Searcher from '../../components/elements/Searcher/Searcher';
+import CardList from '../../components/modules/CardList/CardList';
+import './styles.css';
 
 const Characters = () => {
-	return <div>Page for characters of Rick and Morty</div>;
+	return (
+		<LayoutPrincipal>
+			<div className='container bg-body'>
+				<div className='root pb-5'>
+					<Searcher />
+					<CardList />
+				</div>
+			</div>
+		</LayoutPrincipal>
+	);
 };
 
 export default Characters;

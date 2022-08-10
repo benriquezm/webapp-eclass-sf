@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import './styles.css';
 
@@ -9,14 +10,14 @@ const Navigation = () => {
 				<div className='collapse navbar-collapse' id='navbarNav'>
 					<ul className='nav nav-pills nav-fill'>
 						<li className='nav-item'>
-							<a className='nav-link active' aria-current='page' href='/'>
+							<Link className='nav-link active' to='/'>
 								Characters
-							</a>
+							</Link>
 						</li>
 						<li className='nav-item'>
-							<a className='nav-link' href='/favorites'>
+							<Link className='nav-link' to='/favorites'>
 								Favorites
-							</a>
+							</Link>
 						</li>
 					</ul>
 				</div>
