@@ -3,7 +3,7 @@ import React from 'react';
 const Searcher = () => {
 	return (
 		<div className='col-md-6 offset-md-3'>
-			<form className='d-flex' role='search'>
+			<form className='d-flex mt-5' role='search'>
 				<input
 					className='form-control me-2'
 					type='search'
