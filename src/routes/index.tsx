@@ -5,6 +5,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Characters from './Characters/Characters';
 import CharacterDetails from './CharacterDetails/CharacterDetails';
 import Favorites from './Favorites/Favorites';
+import Nicknames from './Nicknames/Nicknames';
 
 const RoutesCustom = () => {
 	return (
@@ -14,6 +15,7 @@ const RoutesCustom = () => {
 				<Route path='characters' element={<Characters />} />
 				<Route path='characters/:characterId' element={<CharacterDetails />} />
 				<Route path='favorites' element={<Favorites />} />
+				<Route path='nicknames' element={<Nicknames />} />
 			</Routes>
 		</BrowserRouter>
 	);
